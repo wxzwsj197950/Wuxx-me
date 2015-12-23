@@ -31,6 +31,30 @@ var v={
         "OneRepublic"
       ],
       "picUrl": "http://p3.music.126.net/b2nl6jsVbqj23IV8dVvJcg==/7766950139663735.jpg"
+    },
+    {
+      "name": "What Do You Mean?",
+      "url": "http://m2.music.126.net/UZeEqoRyDviIlsl6npj3pw==/3395291907676652.mp3",
+      "artists": [
+        "Justin Bieber"
+      ],
+      "picUrl": "http://p4.music.126.net/jMBeLQIR0hN7iYj6bOOJSg==/3360107534940504.jpg"
+    },
+    {
+      "name": "Sorry",
+      "url": "http://m2.music.126.net/wxiiTmRR6YTuBr3x35CGkA==/3285340745299897.mp3",
+      "artists": [
+        "Justin Bieber"
+      ],
+      "picUrl": "http://p4.music.126.net/wB6uI7lqujPT10C9V-NI_Q==/3296335861579899.jpg"
+    },
+    {
+      "name": "House Party",
+      "url": "http://m2.music.126.net/DcB_NwjPVUN3J2MCPYZZQg==/3233663697343524.mp3",
+      "artists": [
+        "Sam Hunt"
+      ],
+      "picUrl": "http://p3.music.126.net/07N2iZ_QOXm_CpnIyuWihQ==/3247957348498911.jpg"
     }
   ]
 }
