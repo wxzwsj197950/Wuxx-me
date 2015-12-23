@@ -55,6 +55,14 @@ var v={
         "Sam Hunt"
       ],
       "picUrl": "http://p3.music.126.net/07N2iZ_QOXm_CpnIyuWihQ==/3247957348498911.jpg"
+    },
+    {
+      "name": "小苹果",
+      "url": "http://m2.music.126.net/2z2fVglhYR960oYt9chSYQ==/5991238860026527.mp3",
+      "artists": [
+        "筷子兄弟"
+      ],
+      "picUrl": "http://p4.music.126.net/-ObWTBK6AQioScpyB48lJQ==/6027522744151611.jpg"
     }
   ]
 }

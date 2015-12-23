@@ -6,12 +6,28 @@
     	   var index=0;
     	   var count=v.songs.length;
            $(document).ready(function(){
+                 randomMusic();
                  loadMusic(0);
                  var player = $("#player")[0];  
                  player.addEventListener('ended', function () {  
     						nextSong();
 					}, false);
+                 $("#changeBtn").click(function(){
+                    nextSong();
+                 });
+                 $("body").css("background-image","url(wallpaper.jpg)");
+                 $("body").css("background-size","cover");
 		   });
+           function randomMusic() {
+               var times = count*2;
+               for(var i=0;i<times;i++) {
+                   var i1 = Math.random()*(count-1);
+                   var i2 = Math.random()*(count-1);
+                   var song = v.songs[i1];
+                   v.songs[i1] = v.songs[i2];
+                   v.songs[i2] = song;
+               }
+           }
            function loadMusic(pIndex) {
            	    $("#cover_img").attr("src",v.songs[pIndex].picUrl);
                 $("#player").attr("src",v.songs[pIndex].url);
@@ -25,16 +41,41 @@
                 index = (index+1)%count;
              	loadMusic(index);
            }
+
     	</script>
+        <style type="text/css">
+              .info {
+                color: white;
+                font-size: 2em;
+                font-style: bold;
+                background-color: black;
+                background-color:rgba(0,0,0,0.4);
+                width: 400; 
+                margin-right: auto;
+                margin-left: auto;
+              }
+              img {
+                border:2px solid gray;
+              }
+              #container {
+                text-align: center;
+                width: 1366px;
+                height: 768px;
+                margin-top: 40px;
+              }
+        </style>
     </head>
     <body>
-    	<h2 id="title"></h2>
-    	<h3 id="artist"></h3>
+        <div id="container">
+    	<h2 id="title" class="info" style="font-size:2.4em;"></h2>
+    	<h3 id="artist" class="info"></h3>
     	<div style="margin-bottom:15px;">
-    	   <img src="" id="cover_img" width="200" height="200"/>
+    	   <img src="" id="cover_img" width="300" height="300"/>
     	</div>
     	<audio src="" id="player" controls="controls" autoplay="autoplay">
           您的浏览器不支持 audio 标签。
         </audio>
+        <button id="changeBtn">换一首</button>
+        </div>
     </body>    
 </html>
