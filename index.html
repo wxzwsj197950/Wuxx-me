@@ -1,3 +1,40 @@
 ﻿<html>
-    <h2>Hello World!</h2>
+    <head>
+    	<script type="text/javascript" src="data.js"></script>
+    	<script type="text/javascript" src="jquery.min.js"></script>
+    	<script type="text/javascript">
+    	   var index=0;
+    	   var count=v.songs.length;
+           $(document).ready(function(){
+                 loadMusic(0);
+                 var player = $("#player")[0];  
+                 player.addEventListener('ended', function () {  
+    						nextSong();
+					}, false);
+		   });
+           function loadMusic(pIndex) {
+           	    $("#cover_img").attr("src",v.songs[pIndex].picUrl);
+                $("#player").attr("src",v.songs[pIndex].url);
+                $("#title").html(v.songs[pIndex].name);
+                for(var i=0;i<v.songs[pIndex].artists.length-1;i++) {
+                	$("#artist").html(v.songs[pIndex].artists[i]+" &");
+                }
+                $("#artist").html(v.songs[pIndex].artists[v.songs[pIndex].artists.length-1]);
+           }
+           function nextSong() {
+                index = (index+1)%count;
+             	loadMusic(index);
+           }
+    	</script>
+    </head>
+    <body>
+    	<h2 id="title"></h2>
+    	<h3 id="artist"></h3>
+    	<div style="margin-bottom:15px;">
+    	   <img src="" id="cover_img" width="200" height="200"/>
+    	</div>
+    	<audio src="" id="player" controls="controls" autoplay="autoplay">
+          您的浏览器不支持 audio 标签。
+        </audio>
+    </body>    
 </html>
