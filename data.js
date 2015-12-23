@@ -57,12 +57,60 @@ var v={
       "picUrl": "http://p3.music.126.net/07N2iZ_QOXm_CpnIyuWihQ==/3247957348498911.jpg"
     },
     {
-      "name": "小苹果",
-      "url": "http://m2.music.126.net/2z2fVglhYR960oYt9chSYQ==/5991238860026527.mp3",
+      "name": "Love Yourself",
+      "url": "http://m2.music.126.net/nG3GehkDlt6gPgHH3dYKGQ==/3263350515551362.mp3",
       "artists": [
-        "筷子兄弟"
+        "Justin Bieber"
       ],
-      "picUrl": "http://p4.music.126.net/-ObWTBK6AQioScpyB48lJQ==/6027522744151611.jpg"
+      "picUrl": "http://p4.music.126.net/SmaGv_bQTYy5_uOmnAz4Mw==/3285340746015046.jpg"
+    },
+    {
+      "name": "On My Mind",
+      "url": "http://m2.music.126.net/idFaZ-ZzfxPneKs-I2tCsg==/3342515349242091.mp3",
+      "artists": [
+        "Ellie Goulding"
+      ],
+      "picUrl": "http://p3.music.126.net/_W-oVsC__UvZ0UYz3o53AA==/17695540137508989.jpg"
+    },
+    {
+      "name": "Photograph",
+      "url": "http://m2.music.126.net/OXeQr5tXSjc_CUxBD4Zqgg==/7742760884055835.mp3",
+      "artists": [
+        "Ed Sheeran"
+      ],
+      "picUrl": "http://p3.music.126.net/coUnPtrHg0zUozRCwYOxog==/6051711999665662.jpg"
+    },
+    {
+      "name": "Wildest Dreams",
+      "url": "http://m2.music.126.net/JGzMkUjAsEaL-uzK2fCJUw==/6636652186291526.mp3",
+      "artists": [
+        "Taylor Swift"
+      ],
+      "picUrl": "http://p4.music.126.net/OTmR1wQyAnByoMxt72Egqg==/3342515348741741.jpg"
+    },
+    {
+      "name": "How Deep Is Your Love (Radio Edit)",
+      "url": "http://m2.music.126.net/vmR7fVKbktODLk_EAC2Hgg==/7945071024029126.mp3",
+      "artists": [
+        "Calvin Harris"
+      ],
+      "picUrl": "http://p3.music.126.net/9BbO0FNBJq1wJ1T9oUicgg==/7748258441972576.jpg"
+    },
+    {
+      "name": "In the Night",
+      "url": "http://m2.music.126.net/cKkkND28nxZY-6wd402JjA==/7970359791872047.mp3",
+      "artists": [
+        "The Weeknd"
+      ],
+      "picUrl": "http://p3.music.126.net/fR0F9b2egtUZGZJpHFOsRg==/7831821325807606.jpg"
+    },
+    {
+      "name": "Crash and Burn",
+      "url": "http://m2.music.126.net/84JuXG2kDsolGEPBmRmxAg==/2901611185847666.mp3",
+      "artists": [
+        "Thomas Rhett"
+      ],
+      "picUrl": "http://p3.music.126.net/_H9QiD5IzwqTNveay9PtKA==/2889516557956982.jpg"
     }
   ]
 }
