@@ -111,6 +111,47 @@ var v={
         "Thomas Rhett"
       ],
       "picUrl": "http://p3.music.126.net/_H9QiD5IzwqTNveay9PtKA==/2889516557956982.jpg"
+    },
+    {
+      "name": "Renegades",
+      "url": "http://m2.music.126.net/vK2VSXekNQ0I0V-_7WkK9A==/7913185185843099.mp3",
+      "artists": [
+        "X Ambassadors"
+      ],
+      "picUrl": "http://p4.music.126.net/vWxtUi1JhbQD_zupnoGr0w==/2924700930965763.jpg"
+    },
+    {
+      "name": "Want to Want Me",
+      "url": "http://m2.music.126.net/2XAgasDYqaxIogjUC1I3Og==/7891194953019831.mp3",
+      "artists": [
+        "Jason DeRulo"
+      ],
+      "picUrl": "http://p4.music.126.net/m-B8_ykxha812Kl2rKcpGg==/7865906185385353.jpg"
+    },
+    {
+      "name": "Just the Way You Are",
+      "url": "http://m2.music.126.net/qrm0aKbI4Sm4W6ZJk4bsIw==/2106664278819882.mp3",
+      "artists": [
+        "Bruno Mars"
+      ],
+      "picUrl": "http://p3.music.126.net/G0Cc5uhuyQ31nRb9GJuFnw==/2531075767177958.jpg"
+    },
+    {
+      "name": "Perfect",
+      "url": "http://m2.music.126.net/YgyKV1IOdA6EHTaB2i4urg==/3446968953996504.mp3",
+      "artists": [
+        "One Direction"
+      ],
+      "picUrl": "http://p3.music.126.net/jEhH4HtXX4Bkg4NGPURFaw==/3367804117152954.jpg"
+    },
+    {
+      "name": "Marvin Gaye (feat. Meghan Trainor)",
+      "url": "http://m2.music.126.net/l61r4uv_2D4wem3wzM8t5A==/2536573327925292.mp3",
+      "artists": [
+        "Charlie Puth",
+        "Meghan Trainor"
+      ],
+      "picUrl": "http://p3.music.126.net/uB8CBWJkr6np4iogVZ7pZA==/7753755999271048.jpg"
     }
   ]
 }
