@@ -1,41 +1,170 @@
 ﻿<html>
     <head>
-    	<script type="text/javascript" src="data.js"></script>
-    	<script type="text/javascript" src="jquery.min.js"></script>
-    	<script type="text/javascript">
-    	   var index=0;
-    	   var count=v.songs.length;
+      <script type="text/javascript" src="js/data_billboard.js"></script>
+      <script type="text/javascript" src="js/animate.js"></script>
+      <script type="text/javascript" src="js/chinese_song.js"></script>
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" href="">
+         var index=0;
+         var count;
+         var imgIndex = 0;
+         var imgCount = 5;
+         var nowSongsType = 0;
            $(document).ready(function(){
-                 loadMusic(0);
+                 randomMusic(v);
+                 loadMusic(v,0);
                  var player = $("#player")[0];  
                  player.addEventListener('ended', function () {  
-    						nextSong();
-					}, false);
-		   });
-           function loadMusic(pIndex) {
-           	    $("#cover_img").attr("src",v.songs[pIndex].picUrl);
-                $("#player").attr("src",v.songs[pIndex].url);
-                $("#title").html(v.songs[pIndex].name);
-                for(var i=0;i<v.songs[pIndex].artists.length-1;i++) {
-                	$("#artist").html(v.songs[pIndex].artists[i]+" &");
+                 nextSong();
+          }, false);
+                 $("#changeBtn").click(function(){
+                    nextSong();
+                 });
+                 setInterval(function(){
+                    $("#back_img").hide();
+                    imgIndex = (imgIndex+1)%imgCount;
+                    var newSrc = "imgs/wallpaper"+imgIndex+".jpg";
+                    $("#back_img").attr("src",newSrc);
+                    $("#back_img").fadeIn();
+                 },40000);
+       });
+           function randomMusic(data) {
+               count=data.songs.length;
+               var times = count*2;
+               for(var i=0;i<times;i++) {
+                   var i1 = Math.random()*(count-1);
+                   var i2 = Math.random()*(count-1);
+                   i1 = Math.floor(i1);
+                   i2 = Math.floor(i2);
+                   var song = data.songs[i1];
+                   data.songs[i1] = data.songs[i2];
+                   data.songs[i2] = song;
+               }
+           }
+           function loadMusic(data,pIndex) {
+                $("#cover_img").attr("src",data.songs[pIndex].picUrl);
+                $("#player").attr("src",data.songs[pIndex].url);
+                $("#title").html(data.songs[pIndex].name);
+                for(var i=0;i<data.songs[pIndex].artists.length-1;i++) {
+                  $("#artist").html(data.songs[pIndex].artists[i]+" &");
                 }
-                $("#artist").html(v.songs[pIndex].artists[v.songs[pIndex].artists.length-1]);
+                $("#artist").html(data.songs[pIndex].artists[data.songs[pIndex].artists.length-1]);
            }
            function nextSong() {
                 index = (index+1)%count;
-             	loadMusic(index);
+                loadMusic(index);
            }
-    	</script>
+           function BillboardData() {
+                if(nowSongsType==0) return;
+                nowSongsType = 0;
+                randomMusic(v);
+                loadMusic(v,0);
+                index = 0;
+           }
+           function AnimateData() {
+                if(nowSongsType==1) return;
+                nowSongsType = 1;
+                randomMusic(a);
+                loadMusic(a,0);
+                index = 0;
+           }
+           function CineseSongData() {
+                if(nowSongsType==2) return;
+                nowSongsType = 2;
+                randomMusic(c);
+                loadMusic(c,0);
+                index = 0;
+           }
+      </script>
+        <style type="text/css">
+              #player {
+                width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+
+              }
+              .info {
+                color: white;
+                font-size: 1.8em;
+                font-style: bold;
+                background-color: black;
+                background-color:rgba(0,0,0,0.5);
+                width: 400; 
+                margin-right: auto;
+                margin-left: auto;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+              }
+              #cover_img {
+                border:2px solid gray;
+                -moz-border-radius: 50%;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+              }
+              #container {
+                position: absolute;
+                text-align: center;
+                width: 100%;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+                z-index: 0;
+                border: 1px solid red;
+              }
+              #changeBtn img{
+                width: 24px;
+                height: 24px; 
+              }
+              #back_img {
+                position: fixed;
+                left:0px;
+                top:0px;
+                width: 100%;
+                height: 100%;
+                padding: 0;
+                margin:  0;
+                z-index: -1;
+              }
+              #Nav {
+                height: 40px;
+                margin: 0;
+                padding: 0;
+                background-color: black;
+                background-color:rgba(0,0,0,0.5);
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+              }
+              #Nav a{
+                font-size: 2em;
+                text-decoration: none;
+                margin-left: 20px;
+                margin-right: 20px;
+                color: #FFC125;
+              }
+              #Nav a:hover {
+                background-color: white;
+              }
+        </style>
     </head>
     <body>
-        <h1>吴XX呵呵</h1>
-    	<h2 id="title"></h2>
-    	<h3 id="artist"></h3>
-    	<div style="margin-bottom:15px;">
-    	   <img src="" id="cover_img" width="200" height="200"/>
-    	</div>
-    	<audio src="" id="player" controls="controls" autoplay="autoplay">
+        <div id="container">
+          <img src="imgs/wallpaper0.jpg" id="back_img"/>
+                <div id="Nav">
+                    <a href="#" onclick="BillboardData()">Billboard热门</a>
+                    <a href="#" onclick="AnimateData()">二次元歌曲</a>
+                    <a href="#" onclick="CineseSongData()">中文歌曲</a>
+                </div>
+      <h2 id="title" class="info" style="font-size:2em;margin-top:40px"></h2>
+      <h3 id="artist" class="info"></h3>
+      <div style="margin-bottom:15px;">
+         <img src="" id="cover_img" width="320" height="320"/>
+      </div>
+      <audio src="" id="player" controls="controls" autoplay="autoplay" controls>
           您的浏览器不支持 audio 标签。
         </audio>
+        <button id="changeBtn"><img src="imgs/next.png"/></button>
+        </div>
     </body>    
 </html>
