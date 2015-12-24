@@ -10,9 +10,10 @@
          var imgIndex = 0;
          var imgCount = 5;
          var nowSongsType = 0;
+         var data = v;
            $(document).ready(function(){
-                 randomMusic(v);
-                 loadMusic(v,0);
+                 randomMusic();
+                 loadMusic(0);
                  var player = $("#player")[0];  
                  player.addEventListener('ended', function () {  
                  nextSong();
@@ -28,7 +29,7 @@
                     $("#back_img").fadeIn();
                  },40000);
        });
-           function randomMusic(data) {
+           function randomMusic() {
                count=data.songs.length;
                var times = count*2;
                for(var i=0;i<times;i++) {
@@ -41,7 +42,7 @@
                    data.songs[i2] = song;
                }
            }
-           function loadMusic(data,pIndex) {
+           function loadMusic(pIndex) {
                 $("#cover_img").attr("src",data.songs[pIndex].picUrl);
                 $("#player").attr("src",data.songs[pIndex].url);
                 $("#title").html(data.songs[pIndex].name);
@@ -56,6 +57,7 @@
            }
            function BillboardData() {
                 if(nowSongsType==0) return;
+                data = v;
                 nowSongsType = 0;
                 randomMusic(v);
                 loadMusic(v,0);
@@ -63,16 +65,18 @@
            }
            function AnimateData() {
                 if(nowSongsType==1) return;
+                data = a;
                 nowSongsType = 1;
-                randomMusic(a);
-                loadMusic(a,0);
+                randomMusic();
+                loadMusic(0);
                 index = 0;
            }
            function CineseSongData() {
                 if(nowSongsType==2) return;
+                data = c;
                 nowSongsType = 2;
-                randomMusic(c);
-                loadMusic(c,0);
+                randomMusic();
+                loadMusic(0);
                 index = 0;
            }
       </script>
