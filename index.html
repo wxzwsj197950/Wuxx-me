@@ -5,6 +5,7 @@
       <script type="text/javascript" src="js/chinese_song.js"></script>
       <script type="text/javascript" src="js/jquery.min.js"></script>
       <script type="text/javascript" src="js/jquery.rotate.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/nav.css">
       <script type="text/javascript" href="">
          var ang = 0;
          var index=0;
@@ -150,32 +151,15 @@
                 margin:  0;
                 z-index: -1;
               }
-              #Nav {
-                height: 40px;
-                margin: 0;
-                padding: 0;
-                background-color: black;
-                background-color:rgba(0,0,0,0.5);
-                -moz-border-radius: 5px;
-                -webkit-border-radius: 5px;
-                border-radius: 5px;
-              }
-              #Nav a{
-                font-size: 2em;
-                text-decoration: none;
-                margin-left: 20px;
-                margin-right: 20px;
-                color: #FFC125;
-              }
-              #Nav a:hover {
-                background-color: white;
-              }
         </style>
     </head>
     <body>
         <div id="container">
           <img src="imgs/wallpaper0.jpg" id="back_img"/>
                 <div id="Nav">
+                    <!--圣诞节特别-->
+                    <a href="xmas/xmas.html" target="_blank" style="color:red;" onclick="player.pause();">圣诞节快乐!</a>
+                    <!--圣诞节特别-->
                     <a href="#" onclick="BillboardData()">Billboard热门</a>
                     <a href="#" onclick="AnimateData()">二次元歌曲</a>
                     <a href="#" onclick="CineseSongData()">中文歌曲</a>
