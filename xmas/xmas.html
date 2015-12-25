@@ -15,6 +15,15 @@
                         minSize:6,
                         maxSize:15
                         });
+                var hasFlash = false;
+                    try {
+                        hasFlash = Boolean(new ActiveXObject('ShockwaveFlash.ShockwaveFlash'));
+                    } catch(exception) {
+                        hasFlash = ('undefined' != typeof navigator.mimeTypes['application/x-shockwave-flash']);
+                    }
+                    if(!hasFlash) {
+                        $("#bilibili_payer").html("你的浏览器不支持flash");
+                    }
              });
         </script>
 		<style type="text/css">
