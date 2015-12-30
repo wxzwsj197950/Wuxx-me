@@ -42,6 +42,16 @@
                  $("#changeBtn").click(function(){
                     nextSong();
                  });
+                 $("#loopBtn").click(function(){
+                    player.loop = !player.loop;
+                    var isLoop=player.loop;
+                    if(isLoop) {
+                        $("#btnInfo").html("正在循环...");
+                        $("#btnInfo").fadeIn();
+                      } else {
+                        $("#btnInfo").fadeOut();
+                      }
+                 });
                  setInterval(function(){
                     $("#back_img").hide();
                     imgIndex = (imgIndex+1)%imgCount;
@@ -107,11 +117,10 @@
                 width: 300px;
                 margin-left: auto;
                 margin-right: auto;
-
               }
               .info {
                 color: white;
-                font-size: 1.8em;
+                font-size: 1.6em;
                 font-style: bold;
                 background-color: black;
                 background-color:rgba(0,0,0,0.5);
@@ -138,7 +147,7 @@
                 z-index: 0;
                 border: 1px solid red;
               }
-              #changeBtn img{
+              .Btn img{
                 width: 24px;
                 height: 24px; 
               }
@@ -151,6 +160,16 @@
                 padding: 0;
                 margin:  0;
                 z-index: -1;
+              }
+              #btnInfo {
+                display:none; 
+                font-size:1.6em; 
+                color:white;
+                background-color: black;
+                background-color:rgba(0,0,0,0.5);
+                width: 400px;
+                margin-left: auto;
+                margin-right: auto;
               }
         </style>
     </head>
@@ -165,7 +184,7 @@
                     <a href="#" onclick="AnimateData()">二次元歌曲</a>
                     <a href="#" onclick="CineseSongData()">中文歌曲</a>
                 </div>
-      <h2 id="title" class="info" style="font-size:2em;margin-top:40px"></h2>
+      <h2 id="title" class="info" style="font-size:1.6em;margin-top:40px"></h2>
       <h3 id="artist" class="info"></h3>
       <div style="margin-bottom:15px;">
          <img src="" id="cover_img" width="320" height="320"/>
@@ -173,7 +192,9 @@
       <audio src="" id="player" controls="controls" autoplay="autoplay" controls>
           您的浏览器不支持 audio 标签。
         </audio>
-        <button id="changeBtn"><img src="imgs/next.png"/></button>
+        <button id="changeBtn" class="Btn"><img src="imgs/next.png"/></button>
+        <button id="loopBtn" class="Btn"><img src="imgs/loop.png"/></button>
+        <div id="btnInfo"></div>
         </div>
     </body>    
 </html>
