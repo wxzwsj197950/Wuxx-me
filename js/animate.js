@@ -49,6 +49,14 @@
       "picUrl": "http://p4.music.126.net/950Yua16aKfN8lzRHnWA0w==/864216139432210.jpg"
     },
     {
+      "name": "Hacking to the Gate",
+      "url": "http://m2.music.126.net/ibYErCJR1yOKSgNPuJYopg==/7759253558327205.mp3",
+      "artists": [
+        "伊藤加奈子"
+      ],
+      "picUrl": "http://p4.music.126.net/zlb5vuvCl8_8_ghCRVD3zw==/3285340743895627.jpg"
+    },
+    {
       "name": "ぶれないアイで",
       "url": "http://m2.music.126.net/eXl-JtBp4rapJZPesGyiBA==/6671836557568071.mp3",
       "artists": [
@@ -79,14 +87,6 @@
         "miwa"
       ],
       "picUrl": "http://p3.music.126.net/CUDl37bLlgqD7iq5AuJmTg==/2460707023019293.jpg"
-    },
-    {
-      "name": "おはよう。(Keno) Keno",
-      "url": "http://m2.music.126.net/j5zbM-7jNgem2Ys0HG47-w==/3168792511299074.mp3",
-      "artists": [
-        "佐橋俊彦"
-      ],
-      "picUrl": "http://p4.music.126.net/gMiKeil_6xuK5qXYBnxv6A==/2319969534666337.jpg"
     },
     {
       "name": "Let Me Be With You",
@@ -162,6 +162,38 @@
         "SNoW"
       ],
       "picUrl": "http://p4.music.126.net/Fre77fdu3jNvwxVtFHbdRQ==/909296116170969.jpg"
+    },
+    {
+      "name": "色は匂へど 散りぬるを (OPver.)",
+      "url": "http://m2.music.126.net/Tlwlyh1Gy-5kxGpRdhvUCw==/1039038488260383.mp3",
+      "artists": [
+        "幽閉サテライト"
+      ],
+      "picUrl": "http://p3.music.126.net/7n1GXlhCD133abhtJKNtFA==/807041534811701.jpg"
+    },
+    {
+      "name": "brave heart",
+      "url": "http://m2.music.126.net/mgY5byA6h84hreKbG_Hj7g==/3383197282836007.mp3",
+      "artists": [
+        "宮崎歩"
+      ],
+      "picUrl": "http://p4.music.126.net/o8ZfncjFF5frq8Q8iJJ9QQ==/2321069046256264.jpg"
+    },
+    {
+      "name": "only my railgun",
+      "url": "http://m2.music.126.net/tub39VQVu455UARPXJlj0g==/3402988488666004.mp3",
+      "artists": [
+        "fripSide"
+      ],
+      "picUrl": "http://p3.music.126.net/pYhaj5NEZFP-MhgJ2tigFw==/797145930181718.jpg"
+    },
+    {
+      "name": "背叛的晚霞",
+      "url": "http://m2.music.126.net/az8emvvkhSntZ4elVkkb0g==/3386495814645937.mp3",
+      "artists": [
+        "沢城みゆき"
+      ],
+      "picUrl": "http://p3.music.126.net/WJa0nawcL8H11VUXjAlZPg==/880708813848891.jpg"
     }
   ]
 }

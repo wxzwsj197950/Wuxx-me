@@ -152,6 +152,96 @@ var v={
         "Meghan Trainor"
       ],
       "picUrl": "http://p3.music.126.net/uB8CBWJkr6np4iogVZ7pZA==/7753755999271048.jpg"
+    },
+    {
+      "name": "I Know What You Did Last Summer",
+      "url": "http://m2.music.126.net/kCS30sMcA3MO8HRvOf9FzQ==/1364493940876266.mp3",
+      "artists": [
+        "Shawn Mendes",
+        "Camila Cabello"
+      ],
+      "picUrl": "http://p3.music.126.net/u_jpo5eZBWRVTKIf8i0d3g==/3296335864541650.jpg"
+    },
+    {
+      "name": "679 ",
+      "url": "http://m2.music.126.net/LMWQN8ao5zeTzZByr1XVDg==/2890616071858121.mp3",
+      "artists": [
+        "Fetty Wap",
+        "Remy Boyz"
+      ],
+      "picUrl": "http://p3.music.126.net/BceR7yBcepPfZ04A352bEA==/7948369557985867.jpg"
+    },
+    {
+      "name": "Hello",
+      "url": "http://m2.music.126.net/h_ZICx_KhDF9wtOtkKrXWA==/3294136840472686.mp3",
+      "artists": [
+        "Adele"
+      ],
+      "picUrl": "http://p4.music.126.net/br3IrdCvT7-GjCyUVNONiA==/3388694837506899.jpg"
+    },
+    {
+      "name": "Break up with Him",
+      "url": "http://m2.music.126.net/RqvOIJM6Ma9lWbEIDRAFMQ==/7983553930334218.mp3",
+      "artists": [
+        "Old Dominion"
+      ],
+      "picUrl": "http://p4.music.126.net/mKF3bX5SU6tyaTjqvMoZ4w==/2945591653385466.jpg"
+    },
+    {
+      "name": "Break Up in a Small Town",
+      "url": "http://m2.music.126.net/6gd78gK5C9kDueGkHSeI0Q==/2544269908176319.mp3",
+      "artists": [
+        "Sam Hunt"
+      ],
+      "picUrl": "http://p4.music.126.net/07N2iZ_QOXm_CpnIyuWihQ==/3247957348498911.jpg"
+    },
+    {
+      "name": "Fight Song",
+      "url": "http://m2.music.126.net/b0zeU9XFs4x4mq9_4eh9OQ==/6642149744705786.mp3",
+      "artists": [
+        "Rachel Platten"
+      ],
+      "picUrl": "http://p4.music.126.net/Ii2JCiZi8pfa7s9T0_aqqA==/6666339000526642.jpg"
+    },
+    {
+      "name": "Thinking Out Loud",
+      "url": "http://m2.music.126.net/s8VH340ZabwqoGm9xuhP6w==/6031920790539508.mp3",
+      "artists": [
+        "Ed Sheeran"
+      ],
+      "picUrl": "http://p3.music.126.net/coUnPtrHg0zUozRCwYOxog==/6051711999665662.jpg"
+    },
+    {
+      "name": "Trap Queen",
+      "url": "http://m2.music.126.net/80BvS6ksXqWtiBzrH44cSw==/7771348185439540.mp3",
+      "artists": [
+        "Fetty Wap"
+      ],
+      "picUrl": "http://p3.music.126.net/Nn8kTtc14uWJw_UWbEc5mg==/7909886650478099.jpg"
+    },
+    {
+      "name": "Hotline Bling",
+      "url": "http://m2.music.126.net/vzma8iLSJf591VCkx4_fKg==/7870304232729116.mp3",
+      "artists": [
+        "Drake"
+      ],
+      "picUrl": "http://p4.music.126.net/jvWR-sXDap9MTCBFAISKkA==/3357908511357769.jpg"
+    },
+    {
+      "name": "Here",
+      "url": "http://m2.music.126.net/B0WnLHnXpk1veL_LRf6_NQ==/2943392628802406.mp3",
+      "artists": [
+        "Alessia Cara"
+      ],
+      "picUrl": "http://p3.music.126.net/BWESNmtSQPnMzMU8zKm0pw==/2901611186844787.jpg"
+    },
+    {
+      "name": "Sugar",
+      "url": "http://m2.music.126.net/XdP-TUsP9aSZtxAn1af3Pg==/6636652185377132.mp3",
+      "artists": [
+        "Maroon 5"
+      ],
+      "picUrl": "http://p4.music.126.net/SwbJDnhHO0DUDWvDXJGAfQ==/6655343883051583.jpg"
     }
   ]
 }
