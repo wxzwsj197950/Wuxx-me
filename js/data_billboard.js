@@ -242,6 +242,14 @@ var v={
         "Maroon 5"
       ],
       "picUrl": "http://p4.music.126.net/SwbJDnhHO0DUDWvDXJGAfQ==/6655343883051583.jpg"
+    },
+    {
+      "name": "Stressed Out",
+      "url": "http://m2.music.126.net/m7a_h1ccr59CmR263aScZg==/7738362837036286.mp3",
+      "artists": [
+        "twenty one pilots"
+      ],
+      "picUrl": "http://p4.music.126.net/47tUhx6-SFRbW-fBoO1U2Q==/2926899954016297.jpg"
     }
   ]
 }

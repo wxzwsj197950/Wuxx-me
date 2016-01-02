@@ -74,14 +74,15 @@
                }
            }
            function loadMusic(pIndex) {
+                $("#artist").html("");
                 $("#cover_img").attr("src",data.songs[pIndex].picUrl);
                 $("#cover_img").rotate({angle:0});
                 $("#player").attr("src",data.songs[pIndex].url);
                 $("#title").html(data.songs[pIndex].name);
                 for(var i=0;i<data.songs[pIndex].artists.length-1;i++) {
-                  $("#artist").html(data.songs[pIndex].artists[i]+" &");
+                  $("#artist").append(data.songs[pIndex].artists[i]+",");
                 }
-                $("#artist").html(data.songs[pIndex].artists[data.songs[pIndex].artists.length-1]);
+                $("#artist").append(data.songs[pIndex].artists[data.songs[pIndex].artists.length-1]);
            }
            function nextSong() {
                 index = (index+1)%count;
