@@ -17,13 +17,19 @@
          var data = v;
          var needZ = true;
          var timer;
+         var showVisual=false;
+         //只有谷歌浏览器能正常显示
+         var isChrome = window.navigator.userAgent.indexOf("Chrome") !== -1;
            $(document).ready(function(){
+                 if(!isChrome) {
+                   $("#switchBtn").hide();
+                 }
                  randomMusic();
                  loadMusic(0);
                  var player = $("#player")[0];  
                  player.addEventListener('ended', function () {  
                  nextSong();
-          }, false);
+                 }, false);
                  $("#cover_img").hover(function(){
                   needZ = false;
                  });
@@ -38,6 +44,16 @@
                             ang = (ang+1)%360;
                             $("#cover_img").rotate({angle:ang});
                         },60);
+                 });
+                 $("#switchBtn").click(function(){
+                       showVisual = !showVisual;
+                       if(showVisual) {
+                        $("#canvasFormAudio").show();
+                        $("#cover_img").hide();
+                        } else {
+                         $("#canvasFormAudio").hide();
+                         $("#cover_img").show();
+                      }
                  });
                  $("#changeBtn").click(function(){
                     nextSong();
@@ -121,7 +137,7 @@
               }
               .info {
                 color: white;
-                font-size: 1.6em;
+                font-size: 1.5em;
                 font-style: bold;
                 background-color: black;
                 background-color:rgba(0,0,0,0.5);
@@ -145,12 +161,12 @@
                 height: 100%;
                 padding: 0;
                 margin: 0;
-                z-index: 0;
+                z-index: 1;
                 border: 1px solid red;
               }
               .Btn img{
-                width: 24px;
-                height: 24px; 
+                width: 20px;
+                height: 20px; 
               }
               #back_img {
                 position: fixed;
@@ -164,13 +180,18 @@
               }
               #btnInfo {
                 display:none; 
-                font-size:1.6em; 
+                font-size:1.4em; 
                 color:white;
                 background-color: black;
                 background-color:rgba(0,0,0,0.5);
                 width: 400px;
                 margin-left: auto;
                 margin-right: auto;
+              }
+              #canvasFormAudio {
+                margin-left: auto;
+                margin-right: auto;
+                display: none;
               }
         </style>
     </head>
@@ -185,17 +206,20 @@
                     <a href="#" onclick="AnimateData()">二次元歌曲</a>
                     <a href="#" onclick="CineseSongData()">中文歌曲</a>
                 </div>
-      <h2 id="title" class="info" style="font-size:1.6em;margin-top:40px"></h2>
+      <h2 id="title" class="info" style="font-size:1.5em;margin-top:30px"></h2>
       <h3 id="artist" class="info"></h3>
       <div style="margin-bottom:15px;">
-         <img src="" id="cover_img" width="320" height="320"/>
+         <canvas id="canvasFormAudio" width="640" height="240"></canvas>
+         <img src="" id="cover_img" width="300" height="300"/>
       </div>
-      <audio src="" id="player" controls="controls" autoplay="autoplay" controls>
+        <audio src="" id="player" controls="controls" autoplay="autoplay" controls>
           您的浏览器不支持 audio 标签。
         </audio>
         <button id="changeBtn" class="Btn"><img src="imgs/next.png"/></button>
         <button id="loopBtn" class="Btn"><img src="imgs/loop.png"/></button>
+        <button id="switchBtn" class="Btn"><img src="imgs/switch.png"/></button>
         <div id="btnInfo"></div>
         </div>
-    </body>    
+    </body>
+    <script type="text/javascript" src="js/visual.js"></script>    
 </html>
