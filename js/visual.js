@@ -26,6 +26,8 @@
     analyserfa=context1.createAnalyser();
 
     window.addEventListener('load', function(e) {
+        var isChrome = window.navigator.userAgent.indexOf("Chrome") !== -1;
+        if(!isChrome) return;
   	     var audio =document.getElementById("player");
          //连接关系：source->analyserfa->destination
          //把destination看作你浏览器播放音频的设备，声卡或者其他（具体什么是浏览器的事，既然它支持audio标签那肯定能播放音频是吧。。）
