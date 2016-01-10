@@ -70,8 +70,9 @@
             }
             var WIDTH = canvasFormAudio.width;
             var HEIGHT= canvasFormAudio.height;
-            var array =  new Uint8Array(160);
-            var gardding = 4;
+            var array =  new Uint8Array(128);
+            var gardding = 5;
+            var maxHeight=0;
             analyserfa.getByteFrequencyData(array);
             ctxfa.clearRect(0, 0, WIDTH, HEIGHT);
             ctxfa.fillStyle = "rgba(0,0,0,0.8)";
@@ -82,10 +83,11 @@
             ctxfa.moveTo(0,HEIGHT-Math.floor(array[0] / 255 * HEIGHT) + 1);
             for ( var i = 1; i < (array.length); i++ ){
                 var value = array[i];
-                ctxfa.strokeStyle="rgba("+value+",0,0,1)";
+                if(value>maxHeight) maxHeight = value;
                 ctxfa.lineTo(gardding*i,HEIGHT-Math.floor(value / 255 * HEIGHT) + 8);  
                 ctxfa.moveTo(gardding*i,HEIGHT-Math.floor(value / 255 * HEIGHT) + 8); 
             }
+            ctxfa.strokeStyle="rgba("+maxHeight+",0,0,1)";
             ctxfa.stroke(); 
             requestAnimationFrame(drawSpectrumfa1);
         }
@@ -97,13 +99,13 @@
             }
             var WIDTH = canvasFormAudio.width;
             var HEIGHT= canvasFormAudio.height;
-            var array =  new Uint8Array(128);
+            var array =  new Uint8Array(16);
             var R = HEIGHT/2;
             analyserfa.getByteFrequencyData(array);
             ctxfa.clearRect(0, 0, WIDTH, HEIGHT);
             ctxfa.fillStyle = "rgba(0,0,0,0.8)";
             ctxfa.fillRect(0, 0, WIDTH, HEIGHT);
-            ctxfa.lineWidth = 1;
+            ctxfa.lineWidth = 6;
    
             for ( var i = 1; i < (array.length); i++ ){
                 var value = array[i];
