@@ -250,6 +250,16 @@ var v={
         "twenty one pilots"
       ],
       "picUrl": "http://p4.music.126.net/47tUhx6-SFRbW-fBoO1U2Q==/2926899954016297.jpg"
+    },
+    {
+      "name": "Lean On (feat. MØ & DJ Snake)",
+      "url": "http://m2.music.126.net/NP6tNgkd_lvZmam84B5lWA==/7709775534347597.mp3",
+      "artists": [
+        "Major Lazer",
+        "MØ",
+        "DJ Snake"
+      ],
+      "picUrl": "http://p4.music.126.net/jEQ5alcWAhixt2PXCcQ3eg==/7698780418469506.jpg"
     }
   ]
 }
