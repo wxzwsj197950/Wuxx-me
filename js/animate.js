@@ -49,14 +49,6 @@
       "picUrl": "http://p4.music.126.net/950Yua16aKfN8lzRHnWA0w==/864216139432210.jpg"
     },
     {
-      "name": "Hacking to the Gate",
-      "url": "http://m2.music.126.net/ibYErCJR1yOKSgNPuJYopg==/7759253558327205.mp3",
-      "artists": [
-        "伊藤加奈子"
-      ],
-      "picUrl": "http://p4.music.126.net/zlb5vuvCl8_8_ghCRVD3zw==/3285340743895627.jpg"
-    },
-    {
       "name": "ぶれないアイで",
       "url": "http://m2.music.126.net/eXl-JtBp4rapJZPesGyiBA==/6671836557568071.mp3",
       "artists": [
@@ -194,6 +186,38 @@
         "沢城みゆき"
       ],
       "picUrl": "http://p3.music.126.net/WJa0nawcL8H11VUXjAlZPg==/880708813848891.jpg"
+    },
+    {
+      "name": "Burst The Gravity",
+      "url": "http://m2.music.126.net/IGq4F2W46jAN-0Fk_T2Vmw==/3159996418240715.mp3",
+      "artists": [
+        "ALTIMA"
+      ],
+      "picUrl": "http://p4.music.126.net/kfXyXgj6vpG1FVFLsdUUgQ==/2460707023015844.jpg"
+    },
+    {
+      "name": "Hero's Come Back!!",
+      "url": "http://m2.music.126.net/sLVjU4hQ_qaozfHeVeQEsg==/2005509209068889.mp3",
+      "artists": [
+        "nobodyknows+"
+      ],
+      "picUrl": "http://p4.music.126.net/zBunWYTqdxKCW2QZwZCkXw==/594835790638580.jpg"
+    },
+    {
+      "name": "Cagayake! GIRLS",
+      "url": "http://m2.music.126.net/uzoZub8DhT3Kb74QsyvjZQ==/2841138046183023.mp3",
+      "artists": [
+        "放課後ティータイム"
+      ],
+      "picUrl": "http://p4.music.126.net/2dJ8jJNgvahloRs-s-iq0g==/2442015325316138.jpg"
+    },
+    {
+      "name": "crossing field",
+      "url": "http://m2.music.126.net/qkL0Z4GBhpsBHpPxZy-5wA==/2888417046427905.mp3",
+      "artists": [
+        "LiSA"
+      ],
+      "picUrl": "http://p3.music.126.net/owNkUF2gzqihnj9OrUhT0Q==/943380976677908.jpg"
     }
   ]
 }
