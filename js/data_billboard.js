@@ -260,6 +260,48 @@ var v={
         "DJ Snake"
       ],
       "picUrl": "http://p4.music.126.net/jEQ5alcWAhixt2PXCcQ3eg==/7698780418469506.jpg"
+    },
+    {
+      "name": "Cake By The Ocean",
+      "url": "http://m2.music.126.net/-LEZiI6uF0_gpCU5Xjj7Sg==/7881299349169050.mp3",
+      "artists": [
+        "DNCE"
+      ],
+      "picUrl": "http://p3.music.126.net/qQkL9LNO4Drqba3ahhJoLA==/17757112788665139.jpg"
+    },
+    {
+      "name": "Me, Myself & I",
+      "url": "http://m2.music.126.net/M96Mqa3RA4iSunD5tYv2xw==/3300733907950234.mp3",
+      "artists": [
+        "G-Eazy",
+        "Bebe Rexha"
+      ],
+      "picUrl": "http://p3.music.126.net/7h6jZDmpfxootzx6ZAWrAg==/3344714372910748.jpg"
+    },
+    {
+      "name": "Antidote",
+      "url": "http://m2.music.126.net/W3BtR3ic_RW-7IcudJWpBA==/3267748557842032.mp3",
+      "artists": [
+        "Travi$ Scott"
+      ],
+      "picUrl": "http://p4.music.126.net/cuyPP9kXcjJlh-1T0WXNpQ==/7751556976927063.jpg"
+    },
+    {
+      "name": "White Iverson",
+      "url": "http://m2.music.126.net/TCo4Cz9bwlrL8XUApFufQQ==/7872503255527638.mp3",
+      "artists": [
+        "Post Malone"
+      ],
+      "picUrl": "http://p3.music.126.net/A4vy5fPiiz3sWCag4oolFA==/7851612534593317.jpg"
+    },
+    {
+      "name": "Roses",
+      "url": "http://m2.music.126.net/2a_vBVbhIyygzKwA_5PeDA==/7960464185532231.mp3",
+      "artists": [
+        "The Chainsmokers",
+        "ROZES"
+      ],
+      "picUrl": "http://p4.music.126.net/1htm0iN2j1HNDLpTi52x6g==/2931298001873873.jpg"
     }
   ]
 }
