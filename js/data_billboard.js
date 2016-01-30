@@ -302,6 +302,22 @@ var v={
         "ROZES"
       ],
       "picUrl": "http://p4.music.126.net/1htm0iN2j1HNDLpTi52x6g==/2931298001873873.jpg"
+    },
+    {
+      "name": "One Call Away",
+      "url": "http://m2.music.126.net/ox2HqKo0bAgq5n-BPhKeBQ==/3373301675269170.mp3",
+      "artists": [
+        "Charlie Puth"
+      ],
+      "picUrl": "http://p4.music.126.net/KSS8vnbYIEAFAkKpPJdzNw==/3444769930631379.jpg"
+    },
+    {
+      "name": "Adventure of a Lifetime",
+      "url": "http://m2.music.126.net/XdDEWztdmHACafgG86pl_Q==/3385396304549248.mp3",
+      "artists": [
+        "Coldplay"
+      ],
+      "picUrl": "http://p4.music.126.net/a6OatooKiVqJf4ia4RG2ZQ==/1365593442720243.jpg"
     }
   ]
 }
