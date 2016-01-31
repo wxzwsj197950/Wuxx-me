@@ -318,6 +318,14 @@ var v={
         "Coldplay"
       ],
       "picUrl": "http://p4.music.126.net/a6OatooKiVqJf4ia4RG2ZQ==/1365593442720243.jpg"
+    },
+    {
+      "name": "Immortals",
+      "url": "http://m2.music.126.net/rUaarZ8eX-fbL5zmv33cPg==/7697680906142521.mp3",
+      "artists": [
+        "Fall Out Boy"
+      ],
+      "picUrl": "http://p4.music.126.net/_E7DK4uAT6T5AQDvfmrKvA==/7860408627008125.jpg"
     }
   ]
 }
