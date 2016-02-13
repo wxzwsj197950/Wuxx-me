@@ -326,6 +326,14 @@ var v={
         "Fall Out Boy"
       ],
       "picUrl": "http://p4.music.126.net/_E7DK4uAT6T5AQDvfmrKvA==/7860408627008125.jpg"
+    },
+    {
+      "name": "Ocean Drive",
+      "url": "http://m2.music.126.net/xTDpUU8R6DX1OceGiEGiiw==/7714173581587311.mp3",
+      "artists": [
+        "Duke Dumont"
+      ],
+      "picUrl": "http://p3.music.126.net/szE5NkjrRz8eJIo-CHokzQ==/3340316325286599.jpg"
     }
   ]
 }
