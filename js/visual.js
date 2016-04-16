@@ -25,10 +25,23 @@
     analyserfa=context1.createAnalyser();
 
     window.addEventListener('load', function(e) {
+        var Sys = {};
+        var ua = navigator.userAgent.toLowerCase();
+        var s;
+        (s = ua.match(/msie ([\d.]+)/)) ? Sys.ie = s[1] :
+        (s = ua.match(/firefox\/([\d.]+)/)) ? Sys.firefox = s[1] :
+        (s = ua.match(/chrome\/([\d.]+)/)) ? Sys.chrome = s[1] :
+        (s = ua.match(/opera.([\d.]+)/)) ? Sys.opera = s[1] :
+        (s = ua.match(/version\/([\d.]+).*safari/)) ? Sys.safari = s[1] : 0;
+ 
         var isChrome = window.navigator.userAgent.indexOf("Chrome") !== -1;
         if(!isChrome) return;
-
-  	     var audio =document.getElementById("player");
+        
+        if(Sys.chrome) {
+               var v = Sys.chrome.split(".")[0];
+               if(v>=40) return;
+        }
+  	   var audio =document.getElementById("player");
          //连接关系：source->analyserfa->destination
          //把destination看作你浏览器播放音频的设备，声卡或者其他（具体什么是浏览器的事，既然它支持audio标签那肯定能播放音频是吧。。）
          //source就是你音频文件的数据，Analyser是所谓的节点，就是对数据进行处理的对象。
